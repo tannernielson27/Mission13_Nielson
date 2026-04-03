@@ -125,7 +125,10 @@ export default function BookList() {
         <div className="col">
           <h1 className="mb-0">Bookstore</h1>
         </div>
-        <div className="col-auto">
+        <div className="col-auto d-flex gap-2">
+          <button className="btn btn-outline-secondary" onClick={() => navigate('/adminbooks')}>
+            Admin
+          </button>
           {/* Bootstrap Badge – item count on cart button */}
           <button className="btn btn-outline-primary position-relative" onClick={handleViewCart}>
             View Cart
